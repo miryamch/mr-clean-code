@@ -79,5 +79,37 @@ header nav {
 body {
     margin: 0;
     background: rgba(0, 0, 1, 0.9);
+    color: aliceblue; 
+  }
+body h1 {
+    text-align: center; 
+}
+
+  main {
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  article {
+    background: darkslategray;
+    box-shadow: 0 4px 8px rgba(255, 255, 255 , 0.3);
+    margin: 12px;
+    padding: 12px;
   }
 
+  article .code-title a {
+    color: rgb(77, 148, 255);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+article .code-title a:hover {
+    color:rgb(230, 238, 255); 
+  background-color: rgba(230, 238, 255, 0.3);   
+}
+
+  article .code-info {
+      display: inline;
+      color:rgb(153, 187, 255); 
+      font-size: 0.8rem; 
+  }

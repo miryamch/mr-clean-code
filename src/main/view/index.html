@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 
     <script src="../js/app.js"></script>
+    <script src="../js/feed.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../resources/css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
@@ -14,7 +15,7 @@
     <title>Mr. Clean Code</title>
 </head>
 
-<body ng-app="myApp">
+<body ng-app="MrCleanCodeApp">
     <header>
         <div class="row">
             <div class="column left">
@@ -36,11 +37,13 @@
         </div>
         <nav>
             <a href="#/!">Home </a>
-            <a href="#!feed">Their garbage</a>
-            <a href="#!my-dirty-code">My garbage</a>
+            <a href="#!feed">Help others</a>
+            <a href="#!my-dirty-code">Help me</a>
             <a href="#!my-contributions">My Contributions</a>
         </nav>
     </header>
-    <ng-view></ng-view> 
+    <main>
+        <ng-view></ng-view>
+    </main>
 </body>
 <html>
