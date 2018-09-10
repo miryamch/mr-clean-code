@@ -12,5 +12,8 @@ app.config(function($routeProvider) {
     })
     .when("/my-contributions", {
         templateUrl : "my-contributions.html"
+    })
+    .when("/offer-solution", {
+        templateUrl : "offer-solution.html"
     });
 });

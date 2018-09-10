@@ -1,17 +1,17 @@
-<div ng-controller="FeedCtrl">
+<main ng-controller="FeedCtrl">
     <article ng-repeat="code in codeList">
         <div class="code-title">
-            <a href="#">{{code.title}}</a>
+            <a href="#!offer-solution">{{code.title}}</a>
         </div>
-        <p>{{code.summary}}</p>
+        <p>{{code.summary}} in
+            <a>{{code.language}} </a>
+        </p>
         <div class="code-info">
             <span>Posted by:
                 <a>{{code.author}}</a>
             </span>
-            <span>on the:
-                <a>{{code.date}}</a>
-            </span>
+            <span>on the:{{code.date}}</span>
             <span>solutions: {{code.nSolutions}}</span>
         </div>
     </article>
-</div>
+</main>

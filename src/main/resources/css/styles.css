@@ -86,8 +86,10 @@ body h1 {
 }
 
   main {
-    max-width: 1000px;
-    margin: 20px auto;
+    max-width: 1200px;
+    margin: auto; 
+    position: relative; 
+    box-sizing: border-box; 
   }
   
   article {
@@ -98,12 +100,15 @@ body h1 {
   }
 
   article .code-title a {
-    color: rgb(77, 148, 255);
     font-size: 30px;
+}
+
+article a {
+    color: rgb(77, 148, 255);
     text-decoration: none;
 }
 
-article .code-title a:hover {
+article a:hover {
     color:rgb(230, 238, 255); 
   background-color: rgba(230, 238, 255, 0.3);   
 }
@@ -113,3 +118,34 @@ article .code-title a:hover {
       color:rgb(153, 187, 255); 
       font-size: 0.8rem; 
   }
+
+  /* Code editor */ 
+  .code-editor{
+    max-width: 95%;
+    margin: 40px auto;
+    display: flex; 
+    flex-flow: row wrap; 
+  }
+
+.code-editor section{
+      background: darkslategray;
+      box-shadow: 0 4px 8px rgba(255, 255, 255 , 0.3);
+      margin: 12px;
+      padding: 12px;
+      /*flex-basis: 300px; */
+      flex-grow: 1; 
+  }
+
+  /* ASIDE */
+  /*
+  aside {
+    position: absolute; 
+    right: 0;
+    top:0; 
+    width: 20%; 
+    box-sizing: border-box; 
+  padding: 5px; 
+  margin: 5px;
+  background: darkslategray;
+  box-shadow: 0 4px 8px rgba(255, 255, 255 , 0.3);
+  }*/
